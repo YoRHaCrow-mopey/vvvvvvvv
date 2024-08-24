@@ -1,0 +1,661 @@
+/* ---------------------------------------------- navbar ---------------------------------------------- */
+nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.navigation-bar{
+    text-align: center;
+}
+
+.navigation-bar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 250;
+}
+
+.navigation-bar ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation-bar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigation-bar ul li:hover::after{
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BANNER */
+
+.navBlock {
+
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e8430c;
+    padding: .5rem;
+    width: 100%;
+}
+
+.logo img {
+    max-height: 90px;
+}
+
+
+.share {
+    padding-left: 40px;
+    display: flex;
+    gap: 2rem;
+    right: 2%;
+    position: relative;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    flex-wrap: wrap;
+}
+
+.share i.fa-brands.fa-linkedin {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.share i.fa.fa-facebook-square {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.share i.fa.fa-twitter-square {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.share i.fab.fa-instagram {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.bannerBlock img {
+    max-height: 70px;
+}
+
+
+/* ---------------------------------------------- hover text for EMAIL copy button---------------------------------------------- */
+
+.link {
+    position: relative;
+}
+
+.link a {
+    display: block; /* Change the anchor tag to a block-level element */
+}
+
+.link span {
+    font-size: 0.75rem;
+}
+
+.link .hovertext {
+    visibility: hidden;
+    width: 135px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -30px; /* Adjust this value to position the tooltip as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.link:hover .hovertext {
+    visibility: visible;
+}
+
+
+/* ---------------------------------------------- body ---------------------------------------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    overflow-x: hidden;
+}
+
+/* ---------------------------------------------- REG BOX ---------------------------------------------- */
+
+.reviews {
+    background-size: cover;
+}
+
+#blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    margin-top: 8rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+
+.blog-box {
+    max-width: 380px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px 1px #888888;
+}
+
+
+/*  IMAGE AND HOVER  */
+.blog-img {
+    width: 380px;
+    height: 210px;
+    position: relative;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.blog-img:hover .image {
+    opacity: 0.3;
+  }
+
+.blog-img:hover .middle {
+    opacity: 1;
+  }
+
+.text {
+    background-color: white;
+    color: #2F2E2A;
+    font-size: 0.8rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+
+
+.blog-text {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+   height: 80px;
+
+
+}
+
+
+/*  BLOCK TEXT  */
+.blog-text h1 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.blog-text span {
+    color: #369cf5;
+    font-size: 0.9rem;
+
+}
+
+.blog-text p {
+    max-width: 380px;
+    height: auto;
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 7px 0px;
+    flex-wrap: wrap;
+}
+
+.blog-text .blog-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+
+
+/* ---------------------------------------------- ABOUT ---------------------------------------------- */
+
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0px;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-box {
+    max-width: 380px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0px;
+}
+
+
+/*  IMAGE AND HOVER  */
+.about-img {
+    max-width: 320px;
+    max-height: auto;
+    margin: 0 auto;
+
+}
+
+.about-img img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-text {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  BLOCK TEXT  */
+.about-text h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+
+.about-text p {
+    text-align: center;
+    max-width: 500px;
+    height: auto;
+    color: #9b9b9b;
+    font-size: 1rem;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.bottom-banner {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+.bannerBlock {
+    width: 100px;
+}
+
+.bannerBlock h1 {
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: #ffffff;
+
+}
+
+.bannerBlock p {
+    font-size: 0.7rem;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.shareBanner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.shareBanner > div {
+    flex: 1; /* Distribute buttons evenly in a row */
+}
+
+.bannerBlock .shareBanner i.fa.fa-facebook-square {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+.bannerBlock .shareBanner i.fa.fa-twitter-square {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+.bannerBlock .shareBanner i.fab.fa-instagram {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+/* ----------------------------------- ARROW -----------------------------------*/
+
+body { background: @bg;}
+a { color: #a1a1a1; }
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-12px);
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+    .share {
+        padding: .7rem;
+        gap: 1rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .share i.fa-brands.fa-linkedin,
+    .share i.fa.fa-facebook-square,
+    .share i.fa.fa-twitter-square,
+    .share i.fab.fa-instagram {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+    .logo img {
+        max-height: 60px;
+        margin-left: -1rem;
+    }
+
+    .navigation-bar ul li{
+        padding: 4px 6px;
+        position: relative;
+        font-size: 1.3rem;
+        font-weight: 250;
+    }
+
+    .arrow {
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+    }
+
+    .about-container {
+        gap: 1rem;
+    }
+
+
+    .about-box {
+        max-width: 320px;
+        height: auto;
+        background-color: #ffffff;
+        margin: 2px;
+        margin-top: 0px;
+    }
+
+
+    /*  IMAGE AND HOVER  */
+    .about-img {
+        width: 320px;
+        height: 320px;
+    }
+
+
+
+    .about-text {
+        padding: 1.5rem;
+    }
+
+    /*  BLOCK TEXT  */
+    .about-text h1 {
+        font-size: 2rem;
+        margin-top: 5px;
+        margin-bottom: 12px;
+    }
+
+
+    .about-text p {
+        max-width: 500px;
+        font-size: 1rem;
+        margin: 10px 0px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .blog-container {
+        margin-top: 4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .share {
+        padding: 0rem;
+        gap: 0.5rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .share i.fa-brands.fa-linkedin,
+    .share i.fa.fa-facebook-square,
+    .share i.fa.fa-twitter-square,
+    .share i.fab.fa-instagram {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+    .logo img {
+        max-width: 110px;
+    }
+
+    .nav {
+
+
+    }
+
+    .navigation-bar ul li{
+        padding: 4px 6px;
+        position: relative;
+        font-size: 1.1rem;
+        font-weight: 250;
+    }
+
+
+
+
+
+    .blog-box {
+        max-width: 300px;
+
+    }
+
+    .blog-img {
+        width: 300px;
+        height: 140px;
+    }
+
+    .blog-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .blog-text span {
+        font-size: 0.7rem;
+    }
+
+    .blog-text p {
+        max-width: 300px;
+        font-size: 0.7rem;
+
+    }
+
+    .blog-text .blog-title {
+        font-size: 1.2rem;
+
+    }
+
+    .about-container {
+        margin-top: 6rem;
+        margin-bottom: -1rem;
+    }
+
+    .arrow {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .bounce {
+      -moz-animation: bounce 2s infinite;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-18px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
+
+
+    /*  IMAGE AND HOVER  */
+    .about-img {
+        width: 260px;
+        height: 260px;
+
+    }
+
+    /*  BLOCK TEXT  */
+    .about-text h1 {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+
+    .about-text p {
+        max-width: 260px;
+        font-size: 0.8rem;
+    }
+
+
+
+}
